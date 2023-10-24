@@ -1,0 +1,384 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.sidebar {
+    width: 226px; 
+    height: 100%; 
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    background-color: #06030cf9; 
+    color: #fff; 
+    padding: 20px; 
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); 
+    transition: width 0.3s ease;
+}
+
+
+.sidebar.menu-link {
+    background-color: #ff7f00; 
+}
+
+.sidebar h3{
+    font-weight: 1000;
+}
+
+
+.menu-link {
+    color: #fff; 
+    text-decoration: none; 
+    font-size: 18px; 
+    margin-bottom: 10px;
+}
+
+
+
+.custom-border {
+    border: 2px solid #0ee5cf; 
+    border-radius: 10px; 
+    padding: 15px; 
+    margin-bottom: 20px; 
+}
+
+.content {
+    margin-left: 17.8%; 
+    padding: 20px;
+    background: linear-gradient(to right, #0f3443, #34e69f);
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 100%; 
+        position: static; 
+        height: auto; 
+    }
+
+    .content {
+        margin-left: 0; 
+        padding: 10px; 
+    }
+}
+
+h1 {
+    font-weight: 1000;
+    font-size: 50px;
+    margin: 20px 0;
+    padding: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: -20px;
+    background-position: center;
+    animation: changeColor 8s infinite; 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    color: transparent; 
+}
+
+
+@keyframes changeColor {
+    0% {
+        color: #96593c;
+    }
+    25% {
+        color: #eb8948;
+    }
+    50% {
+        color: #cb9e4a;
+    }
+    75% {
+        color: #fafc6c;
+    }
+    100% {
+        color: #feffa7;
+    }
+}
+
+
+.col-lg-6 {
+    background-color: rgb(41, 159, 137); 
+    padding: 20px;
+    border: 1px solid rgb(41, 159, 137);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.col-lg-6 input[type="file"] {
+    height: 45px; 
+}
+
+.col-lg-6 h3 {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.col-lg-6 button {
+    background-color: #0a7064;
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s ease; 
+}
+
+.col-lg-6 button:hover {
+    background-color: #039e8e; 
+}
+
+#result {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+
+/*.Nosotros,
+.Informacion {
+    background-color: rgb(25, 133, 114); 
+    padding: 20px; 
+    border-radius: 5px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+    margin-top: 30px; 
+}
+
+.Nosotros h3,
+.Informacion h3 {
+    font-size: 28px;
+    color: #fff; 
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Latin Modern Roman";
+}
+
+.Nosotros div,
+.Informacion div {
+    font-size: 16px;
+    color: #fff; 
+}
+
+.Nosotros p,
+.Informacion p {
+    margin-bottom: 20px;
+    margin-left: 3px;
+}*/
+
+/*.Galeria {
+    text-align: center;
+    padding: 20px;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: center;
+}
+
+.imagenes img {
+    max-width: 100%;
+    margin: 7px;
+    border: 3px solid #fff;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.imagenes img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .imagenes {
+        flex-direction: column;
+    }
+
+    .imagenes img {
+        width: 100%;
+        max-width: none;
+        margin: 7px 0;
+    }
+}*/
+
+section {
+    padding: 20px; 
+}
+
+section h2 {
+    font-size: 28px; 
+    color: #fff; 
+    text-align: center;
+    margin: 20px 0; 
+    padding: 10px; 
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Latin Modern Roman";
+}
+
+section label {
+    font-weight: bold; 
+    display: block; 
+    margin-top: 10px; 
+    color: #fff; 
+}
+
+section input[type="text"],
+section input[type="email"],
+section textarea {
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 5px;
+    border: none; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 5px; 
+    color: #333; 
+}
+
+section button[type="submit"] {
+    background-color: #10665c; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin-top: 10px; 
+}
+
+section button[type="submit"]:hover {
+    background-color: #1b7268; 
+}
+
+#nombre, #correo {
+    height: 40px; 
+}
+
+#mensaje{
+    height: 100px;
+}
+
+/*.PF {
+    background-color: rgb(25, 133, 114); 
+    padding: 20px; 
+    border-radius: 5px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+    margin-top: 20px; 
+}
+
+.PF h3 {
+    font-size: 28px; 
+    color: #fff; 
+    text-align: center;
+    margin: 20px 0; 
+    padding: 10px; 
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Latin Modern Roman";
+}
+
+.pregunta {
+    font-weight: bold; 
+    font-size: 18px;
+    color: #333; 
+    margin-top: 15px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 10px; 
+    border-radius: 5px; 
+    color: #333; 
+}*/
+
+
+
+.Test {
+    text-align: center; 
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px; 
+    box-shadow: 0px 0px 10px rgba(18, 18, 18, 0.1); 
+}
+
+.Test h3 {
+    font-size: 28px; 
+    color: #fff; 
+    text-align: center;
+    margin: 20px 0; 
+    padding: 8px; 
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Latin Modern Roman";
+}
+
+.Test h4 {
+    font-size: 20px; 
+    color: #333; 
+    margin-top: 10px; 
+    font-weight: 1000;
+}
+
+.testimonio {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 15px; 
+    font-size: 16px; 
+    color: #333; 
+    margin-top: 10px; 
+    transition: background-color 0.3s ease; 
+}
+
+.testimonio:hover {
+    background-color: rgba(103, 210, 190, 0.8); 
+}
+
+.Test img {
+    border-radius: 70%; 
+    width: 170px; 
+    height: 170px; 
+    border: 5px solid #fff; 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.Test img:hover {
+    transform: scale(1.1); 
+    cursor: pointer; 
+}
+
+
+footer {
+    background: #0e1010; 
+    padding: 30px 0; 
+    margin: auto;
+    text-align: center;
+}
+
+
+div.row {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 20px; 
+}
+
+
+.footer h4 {
+    font-size: 20px; 
+    margin-bottom: 10px;
+    color: #fff; 
+}
+
+
+.footer p {
+    font-size: 16px;
+    margin: 10px 0; 
+    color: #fff; 
+    text-align: center;
+}
+
+
+.footer p:last-child {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/newsletter.css" />
+    <title>Newsletter</title>
+  </head>
+  <body>
+    <img src="../img/bg.jpg" alt="Background Image" class="bg-image" />
+    <section class="section">
+      <nav class="navbar navbar-expand-md">
+        <!-- container -->
+        <div class="container">
+          <a class="navbar-brand" href="../proyecto.html"
+            ><img src="../img/LOGO.png" alt="Logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+            <input type="checkbox" id="toggle-menu" />
+            <label type="button" class="toggle-btn" for="toggle-menu">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </label>
+          </button>
+          <div class="collapse navbar-collapse">
+            <!-- ms-auto -->
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../proyecto.html #home-section"
+                  >HOME</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../proyecto.html #about-section"
+                  >ABOUT</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../proyecto.html #cases-section"
+                  >CASES</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pricing.html">PRICING</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  CONTACT
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="message.html">MESSAGE</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="newsletter.html"
+                      >NEWSLETTER</a
+                    >
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="work.html">WORK WITH US</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="contenido">
+        <h1 id="inicio" style="margin-top: -20px">BOLETÍN INFORMATIVO</h1>
+        <div class="Informacion" style="margin-top: 50px">
+          <div class="info" style="color: #fff; margin-top: -15px">
+            <h3>Información de la API</h3>
+            <div>
+              <p>
+                Nuestro proyecto utiliza una avanzada API de reconocimiento de
+                notas musicales para proporcionarte información precisa sobre
+                las notas que se tocan en tu música.
+              </p>
+              <p>
+                La API es capaz de analizar archivos de música en detalle,
+                identificar las notas y proporcionar resultados claros y
+                concisos. Esto puede ser útil para una variedad de aplicaciones,
+                incluyendo la enseñanza de música, la composición de canciones y
+                la investigación musical.
+              </p>
+              <p>
+                Estamos comprometidos en ofrecer a nuestros usuarios la mejor
+                experiencia musical posible, y la API es una parte fundamental
+                de ello.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="Galeria">
+          <div class="imagenes">
+            <img src="../img/foto4.jpg" alt="" />
+            <img src="../img/foto1.jpg" alt="" />
+            <img src="../img/foto2.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="Preguntas">
+        <div class="PF">
+          <h3>Preguntas Frecuentes</h3>
+          <div>
+            <h4 class="pregunta">
+              ¿Qué funcionalidades ofrece la API del Lector de Audios?
+            </h4>
+            <p class="respuesta">
+              Nuestra API ofrece funcionalidades para analizar archivos de
+              música y extraer información sobre las notas musicales presentes
+              en la música. Puedes obtener datos como las notas, duraciones y
+              octavas detectadas en la música que envíes a través de la API.
+            </p>
+
+            <h4 class="pregunta">
+              ¿Cómo puedo manejar errores o excepciones al usar la API?
+            </h4>
+            <p class="respuesta">
+              La API devuelve respuestas estructuradas que incluyen códigos de
+              estado y mensajes de error en caso de problemas. Puedes
+              implementar lógica en tu aplicación para manejar estos errores y
+              brindar a los usuarios un mensaje adecuado en caso de que algo
+              salga mal durante la solicitud a la API.
+            </p>
+
+            <h4 class="pregunta">
+              ¿Qué tipos de archivos de música puedo cargar?
+            </h4>
+            <p class="respuesta">
+              Aceptamos una variedad de formatos de archivo de música,
+              incluyendo MP3, WAV, MIDI y más. Puedes cargar archivos de música
+              en cualquier formato compatible.
+            </p>
+
+            <h4 class="pregunta">
+              ¿Puedo usar esta herramienta en línea o debo descargarla?
+            </h4>
+            <p class="respuesta">
+              Nuestra herramienta de Lector de Audios es completamente accesible
+              en línea, lo que significa que no es necesario descargar ni
+              instalar ningún software en tu dispositivo. Puedes acceder a ella
+              directamente desde tu navegador web, lo que facilita su uso en
+              cualquier lugar y en cualquier momento.
+            </p>
+
+            <h4 class="pregunta">
+              ¿Necesito conocimientos musicales para usar esta herramienta?
+            </h4>
+            <p class="respuesta">
+              No es necesario tener conocimientos musicales avanzados. Nuestra
+              herramienta está diseñada para ser accesible tanto para músicos
+              experimentados como para principiantes. Proporcionamos resultados
+              claros y fáciles de entender.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <img src="../img/logo.png" alt="Logo" />
+            </div>
+            <div class="modal-body">
+              <!-- ms-auto -->
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="../proyecto.html #home-section"
+                    ><i class="fas fa-home"></i> HOME</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../proyecto.html #about-section"
+                    ><i class="fas fa-users"></i> ABOUT</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../proyecto.html #cases-section"
+                    ><i class="fas fa-folder-open"></i> CASES</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../proyecto.html #pricing-section"
+                    ><i class="fas fa-tags"></i> PRICING</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fas fa-reply-all"></i> CONTACT
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li>
+                      <a class="dropdown-item" href="message.html">MESSAGE</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="newsletter.html"
+                        >NEWSLETTER</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="work.html">WORK WITH US</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                <label for="toggle-menu">Close</label>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div>
+      <footer class="footer" style="position: relative; margin-top: 20px">
+        <div class="row">
+          <div class="col-md-4">
+            <h4>NUMEROS DE CONTACTO</h4>
+            <p>123-456-789</p>
+            <p>987-654-321</p>
+          </div>
+          <div class="col-md-4">
+            <h4>REDES SOCIALES</h4>
+            <p>Facebook</p>
+            <p>Twitter</p>
+            <p>Instagram</p>
+          </div>
+          <div class="col-md-4">
+            <h4>EMAIL</h4>
+            <p>LectorDeAudios@gmail.com</p>
+          </div>
+        </div>
+        <p>&copy; 2023 Lector de Audios</p>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
